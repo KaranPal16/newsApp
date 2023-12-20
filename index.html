@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="#">
-                <img src="./image/logonews.png" alt="">
+    <nav class="main">
+        <div class="container flex">
+            <a href="#" id="India" onclick="reload()">
+                <img src="./image/logonews.png" alt="" >
             </a>
             <div class="nav-bar">
                 <ul class="flex">
-                    <li><a href="#">Finance</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Sport</a></li>
+                    <li id="Finance" onclick="listClick('Finance')"><a href="#">Finance</a></li>
+                    <li id="Science" onclick="listClick('Science')"><a href="#">Science</a></li>
+                    <li id="Technology" onclick="listClick('Technology')"><a href="#">Technology</a></li>
+                    <li id="Sport" onclick="listClick('Sport')"><a href="#">Sport</a></li>
                 </ul>
             </div>
             <div class="input flex">
@@ -26,8 +26,20 @@
             </div>
         </div>
     </nav>
-    <main>
+    <main class="flex">
+        <div class="container flex news-items" id="card-container">
        
+       </div>
     </main>
+    <template id="template">
+        
+            <div class="box ">
+                <img src="https://placehold.co/300x200" alt="img" id="newsImg">
+                <h2 class="text" id="newsTitle">new-title</h2>
+                <h6 class="text" id="newsSource">PublishedAt</h6>
+                <p class="text" id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora, mollitia culpa praesentium error eligendi cum porro ipsam quisquam ipsa!</p>
+            </div>
+    </template>
+    <script src="index.js"></script>
 </body>
 </html>
